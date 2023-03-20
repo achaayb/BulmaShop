@@ -1,0 +1,72 @@
+    /* Centered Menu */
+    .navbar.has-centered-menu .navbar-start {
+        flex-grow: 1;
+        justify-content: center;
+      }
+  
+      /* Centered Logo Collapsed*/
+      .navbar.has-centered-logo .navbar-start,
+      .navbar.has-centered-logo .navbar-end {
+        flex: 1 1 0;
+      }
+  
+      .navbar.has-centered-logo .navbar-start {
+        justify-content: flex-end;
+      }
+  
+      .navbar.has-centered-logo .navbar-end {
+        justify-content: flex-start;
+      }
+  
+      /* Centered Logo Expanded*/
+      .navbar.has-centered-logo-alt .navbar-start,
+      .navbar.has-centered-logo-alt .navbar-end {
+        flex: 1 1 0;
+      }
+  
+      /* Centered Logo Above */
+      .navbar.has-logo-above {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* Centered Logo With additional Menu*/
+      .navbar.has-centered-logo-alt2 .navbar-menu {
+        flex-wrap: wrap;
+      }
+  
+      .navbar.has-centered-logo-alt2 .navbar-start,
+      .navbar.has-centered-logo-alt2 .navbar-end {
+        flex: 1 1 0;
+      }
+  
+      .navbar.has-centered-logo-alt2 .navbar-wide.navbar-start {
+        flex: 1 1 100%;
+        justify-content: center;
+      }
+  
+      /* TopBanner */
+      .banner {
+        background: #00d1b2;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 3px;
+      }
+  
+      .banner a {
+        text-decoration: underline;
+        color: white
+      }
+  
+      .banner a:hover {
+        text-decoration: none;
+      }
+
+      /* Logo */
+
+      .logo {
+        margin-left: auto;
+        width: 165.5px;
+        height: 139px;
+      }

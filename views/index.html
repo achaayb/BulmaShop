@@ -1,0 +1,55 @@
+ % include('header.html')
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="store" id="store">
+            <div class="store__products">
+              <div>
+                <div class="section is-medium is-hidden">
+                  <div class="columns is-mobile">
+                    <div class="column"></div>
+                    <div class="column is-narrow">
+                      <div data-v-6a541738="" class="hollow-dots-spinner" style="height: 15px; width: 90px;">
+                        <div data-v-6a541738="" class="dot"
+                          style="animation-delay: 300ms; animation-duration: 1000ms; width: 15px; height: 15px; margin: 0px 7.5px; border-width: 3px; border-color: rgb(26, 26, 26);">
+                        </div>
+                        <div data-v-6a541738="" class="dot"
+                          style="animation-delay: 600ms; animation-duration: 1000ms; width: 15px; height: 15px; margin: 0px 7.5px; border-width: 3px; border-color: rgb(26, 26, 26);">
+                        </div>
+                        <div data-v-6a541738="" class="dot"
+                          style="animation-delay: 900ms; animation-duration: 1000ms; width: 15px; height: 15px; margin: 0px 7.5px; border-width: 3px; border-color: rgb(26, 26, 26);">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column"></div>
+                  </div>
+                </div>
+                <div class="columns is-multiline is-mobile">
+                  % for product in products:
+                  <div class="column is-half-mobile is-one-third-tablet">
+                    <div id="product_component_6854648660149" class="product-component"><a
+                        href="/product/{{product['id']}}" title="{{ product['product_name'] }}"><img
+                          src="{{ product['product_image'] }}"></a>
+                      <h2 class="product-component__title">{{ product['product_name'] }}</h2>
+                      <div class="product-component__prices"><span
+                          class="product-component__prices__product-price">${{ product['product_price']}} </span>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                  % end
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  % include('footer.html')
